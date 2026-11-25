@@ -1,0 +1,20 @@
+# Node / Web Application
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+build/
+
+# Android / Gradle
+.gradle/
+.kotlin/
+local.properties
+*.iml
+.idea/
+debug.keystore
+*.jks
+
+# OS / Editor
+.DS_Store
+Thumbs.db

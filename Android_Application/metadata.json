@@ -1,0 +1,6 @@
+{
+  "name": "YojanaSetu",
+  "description": "Government Scheme Recommendation Portal with personalized eligibility evaluation, document checklist, offline persistence, and multilingual AI chatbot assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

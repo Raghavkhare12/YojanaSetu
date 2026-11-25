@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:pivotX="54"
+        android:pivotY="54">
+        <!-- Shield Background Frame -->
+        <path
+            android:fillColor="#1E3A60"
+            android:strokeColor="#FFC107"
+            android:strokeWidth="2.5"
+            android:pathData="M54,26 C68,26 80,31 80,45 C80,66 65,79 54,84 C43,79 28,66 28,45 C28,31 40,26 54,26 Z" />
+        <!-- Inner glow rim -->
+        <path
+            android:fillColor="#00000000"
+            android:strokeColor="#40FFC107"
+            android:strokeWidth="1.2"
+            android:pathData="M54,30 C65,30 75,34 75,46 C75,63 63,74 54,79 C45,74 33,63 33,46 C33,34 43,30 54,30 Z" />
+        <!-- Government / Institutional Portico & Pillars -->
+        <!-- Pediment Triangle -->
+        <path
+            android:fillColor="#FFC107"
+            android:pathData="M54,34 L40,43 L68,43 Z" />
+        <!-- Architrave -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M39,44 L69,44 L69,46.5 L39,46.5 Z" />
+        <!-- Pillars -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M42,47.5 L45,47.5 L45,61 L42,61 Z
+                              M49,47.5 L52,47.5 L52,61 L49,61 Z
+                              M56,47.5 L59,47.5 L59,61 L56,61 Z
+                              M63,47.5 L66,47.5 L66,61 L63,61 Z" />
+        <!-- Base plinth -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M39,62 L69,62 L69,65 L39,65 Z" />
+        <!-- Star / Welfare Crest on Top -->
+        <path
+            android:fillColor="#FFD54F"
+            android:pathData="M54,36.5 L55.2,39.5 L58.5,39.7 L56,41.8 L56.8,45 L54,43.2 L51.2,45 L52,41.8 L49.5,39.7 L52.8,39.5 Z" />
+        <!-- Laurel / Wheat branches at base -->
+        <path
+            android:fillColor="#FFC107"
+            android:pathData="M46,67 C48,70 51,71.5 54,72 C57,71.5 60,70 62,67 C59,68.5 57,69 54,69 C51,69 49,68.5 46,67 Z" />
+    </group>
+</vector>
