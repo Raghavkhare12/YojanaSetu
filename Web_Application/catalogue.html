@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schemes Catalogue - YojanaSetu National Portal</title>
+  <meta name="description" content="Explore verified Central & State Government Welfare Schemes. Filter by Sector, Income, State, and Age.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Top Tricolor Bar -->
+  <div class="gov-top-bar"></div>
+  <div class="sub-top-bar">
+    <div class="gov-emblem-text">🇮🇳 GOVERNMENT OF INDIA WELFARE PORTAL | राष्ट्रीय योजना सेतु</div>
+    <div class="top-bar-controls">
+      <span>Language: <strong>English / हिंदी</strong></span>
+      <button class="top-btn" id="themeToggleBtn" title="Toggle Light/Dark Theme">🌙 Theme</button>
+    </div>
+  </div>
+
+  <!-- Shared Header Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">
+      <div class="logo-icon">🏛️</div>
+      <div>
+        <div class="brand-title">YojanaSetu</div>
+        <div class="brand-subtitle">Citizen Scheme Eligibility Portal</div>
+      </div>
+    </a>
+
+    <ul class="nav-menu">
+      <li><a href="index.html" class="nav-link">🏠 Home</a></li>
+      <li><a href="catalogue.html" class="nav-link active">📚 Schemes Catalogue</a></li>
+      <li><a href="saved.html" class="nav-link">⭐ Saved Schemes <span class="badge-count" id="savedCountBadge">2</span></a></li>
+      <li><a href="compare.html" class="nav-link">⚖️ Compare Schemes</a></li>
+      <li><a href="profile.html" class="nav-link">👤 Profile</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="login.html" class="user-btn" id="userProfileBtn">🔐 Login / Account</a>
+    </div>
+  </nav>
+
+  <div class="app-container">
+    <div class="catalogue-header">
+      <h1 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem;">📚 All Verified Government Welfare Schemes</h1>
+      <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">Filter by sector, search by title or keywords, and check step-by-step application procedures.</p>
+
+      <div class="search-filter-bar">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" class="search-input" id="searchInput" placeholder="Search by scheme name, sector, benefit (e.g. Ration Card, Ayushman, ₹6000, Mudra)...">
+          <button class="voice-btn" id="voiceSearchBtn" title="Voice Search">🎤</button>
+        </div>
+
+        <select class="select-control" id="sortSelect">
+          <option value="match">Sort by Eligibility Match %</option>
+          <option value="benefit">Sort by Financial Benefit</option>
+          <option value="name">Sort Alphabetically (A-Z)</option>
+        </select>
+      </div>
+
+      <div class="sector-chips" id="sectorChipsContainer"></div>
+    </div>
+
+    <div class="schemes-grid" id="schemesGrid"></div>
+  </div>
+
+  <!-- Scheme Details Modal -->
+  <div class="modal-overlay" id="schemeModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="schemeModalTitle">Scheme Details</h3>
+        <button class="close-btn close-modal-btn">✕</button>
+      </div>
+      <div class="modal-body" id="schemeModalBody"></div>
+    </div>
+  </div>
+
+  <div id="toastContainer" style="position: fixed; bottom: 25px; left: 25px; z-index: 3000;"></div>
+
+  <!-- Floating AI Assistant Chatbot -->
+  <div class="chat-drawer" id="chatDrawer">
+    <div class="chat-header">
+      <div class="chat-bot-info">
+        <div class="chat-bot-avatar">🤖</div>
+        <div>
+          <div style="font-weight: 700; font-size: 0.95rem;">YojanaMitra AI</div>
+          <div style="font-size: 0.72rem; opacity: 0.9;">Multilingual Government Scheme Assistant</div>
+        </div>
+      </div>
+      <button class="close-btn" id="closeChatBtn" title="Close AI Assistant">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessagesContainer"></div>
+    <div class="chat-input-area">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Ask in English or हिंदी...">
+      <button class="chat-send-btn" id="sendChatBtn">➤</button>
+    </div>
+  </div>
+  <button class="chat-toggle-trigger" id="chatToggleTrigger">💬 Ask YojanaMitra AI</button>
+
+  <footer class="portal-footer">
+    🇮🇳 YojanaSetu National Citizen Welfare Portal • Government of India Digital Entitlement Guidelines
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
